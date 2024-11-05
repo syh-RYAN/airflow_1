@@ -26,7 +26,7 @@ with DAG(
     def xcome_pull(**kwargs):
         ti = kwargs['ti']
         value1 = ti.xcome_pull(key='result1')
-        value2 = ti.xcome_pull(key='result2',task_ids='python_xcome_pull_task1')
+        value2 = ti.xcome_pull(key='result2',task_ids='python_xcome_push_task1')
         print(value1)
         print(value2)
         
